@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "type": "F2L",
+            "label": "F2L - 001-a - file",
+            "algorithm": "U (R U' R') U' (F' U F)",
+            "schema-top": ["0-0-0",
+                           "0-0-0",
+                           "0-R-0"],
+            "schema-front": ["0-F-0",
+                             "F-F-0",
+                             "F-F-F"],
+            "schema-right": ["0-0-0",
+                             "0-R-R",
+                             "R-R-R"]
+        },
+        {
+            "type": "F2L",
+            "label": "F2L - 005 - file",
+            "algorithm": "R U R'",
+            "schema-top": ["0-F-0",
+                           "0-0-0",
+                           "0-0-R"],
+            "schema-front": ["0-0-F",
+                             "F-F-0",
+                             "F-F-0"],
+            "schema-right": ["D-0-0",
+                             "0-R-R",
+                             "0-R-R"]
+        },
+        {
+            "type": "OLL",
+            "label": "OLL - 001 - file",
+            "algorithm": "(R2 D)(R' U2)(R D')(R' U2 R')",
+            "schema": ["X - - - X",
+                       "- T T T -",
+                       "- T T T -",
+                       "- 0 T 0 -",
+                       "X = - = X"]
+        },
+        {
+            "type": "PLL",
+            "label": "PLL - 001 - file",
+            "algorithm": "(R2 U)(R U R' U')(R' U')(R' U R')",
+            "schema-1": ["00 00 00",
+                         "01 00 02",
+                         "00 03 00"]
+        },
+        {
+            "type": "PLL",
+            "label": "PLL - 004-a - file",
+            "algorithm": "(M2 U M2 U)(M' U2)(M2 U2)(M' U2)",
+            "schema-1": ["0-2-0",
+                         "1-0-0",
+                         "0-0-0"],
+            "schema-2": ["0-0-0",
+                         "0-0-2",
+                         "0-1-0"]
+        }
+    ]
+  }
