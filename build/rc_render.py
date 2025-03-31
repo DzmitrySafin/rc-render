@@ -273,7 +273,8 @@ def getGimpVersion():
             if "CFBundleVersion" in pl:
                 version = pl["CFBundleVersion"]
     if ss.isWindows:
-        binVersion = subprocess.check_output(f"\"{os.path.join(ss.gimpFolder, "bin", "gimptool-2.0")}\" --version", stderr=subprocess.STDOUT, shell=True)
+        cmd_path = os.path.join(ss.gimpFolder, "bin", "gimptool-2.0")
+        binVersion = subprocess.check_output(f"\"{cmd_path}\" --version", stderr=subprocess.STDOUT, shell=True)
         version = binVersion.decode()
     if ss.isLinux:
         pass
